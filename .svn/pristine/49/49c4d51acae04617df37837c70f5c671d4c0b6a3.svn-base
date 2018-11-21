@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<action-deinition>
+ <action id="1" name="CopyRatePlan" schema="CopyRatePlan.xsd" type="PLSQL">
+  <action-procedure package="TTM_RATEPLAN" name="COPYRATEPLAN">
+   <parameters>
+   	<param seq="2" name="Rate_Plan_Desc" data-type="String"/>
+    <param seq="3" name="Rate_Plan_Shdesc" data-type="String"/>
+    <param seq="4" name="Effective_Date" data-type="Date"/>
+	<param seq="5" name="Source_Rate_Plan_Shdes" data-type="String"/>
+    <param seq="6" name="Source_Rate_Plan_Version" data-type="Int"/>
+   </parameters>
+  </action-procedure>
+ </action>
+ 
+ <action id="2" name="TestAction" schema="TestAction.xsd" type="PLSQL">
+  <action-procedure package="TTM_RATEPLAN" name="TEST_ACTION">
+   <parameters>
+   	<param seq="2" name="param1" data-type="String"/>
+    <param seq="3" name="param2" data-type="Int"/>
+    <param seq="4" name="param3" data-type="Date"/>
+   </parameters>
+  </action-procedure>
+ </action>
+ 
+</action-deinition>

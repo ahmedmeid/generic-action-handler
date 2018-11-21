@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ttm.xpress.com/schema/CopyRatePlan" targetNamespace="http://ttm.xpress.com/schema/CopyRatePlan" elementFormDefault="qualified">
+<xsd:import schemaLocation="TtmAction.xsd"/>
+	<xsd:simpleType name="shdes-type">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="5"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:element name="CopyRatePlan" type="tns:CopyRatePlan">
+	</xsd:element>
+	<xsd:complexType name="CopyRatePlan">
+		<xsd:complexContent>
+			<xsd:extension base="TtmAction">
+				<xsd:sequence>
+						<xsd:element name="parameters">
+							<xsd:complexType>
+								<xsd:attribute name="Rate_Plan_Desc" type="xsd:string" use="required"/>
+								<xsd:attribute name="Rate_Plan_Shdesc" type="tns:shdes-type" use="required"/>
+								<xsd:attribute name="Effective_Date" type="xsd:string" use="required"/>
+								<xsd:attribute name="Source_Rate_Plan_Shdes" type="tns:shdes-type" use="required"/>
+								<xsd:attribute name="Source_Rate_Plan_Version" type="xsd:long" use="required"/>
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

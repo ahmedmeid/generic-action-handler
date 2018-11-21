@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CopyRatePlan>
+	<parameters Rate_Plan_Desc="TTM Copy rateplan test" Rate_Plan_Shdesc="TCRP" Effective_Date="01/07/2011" Source_Rate_Plan_Shdes="FESI" Source_Rate_Plan_Version="4"/>
+</CopyRatePlan>
